@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="/scss/style.css">
+
+	<title>Game Portal - News Feed</title>
+
+</head>
+<body>
+	
+	<!-- Grid template container -->
+	<div class="grid-container">
+
+		<!-- Header -->
+		<div class="header flex jc-sb ai-c">
+			<div class="search-control flex ai-c">
+				<svg version="1.1" width="20px" height="20px" x="0px" y="0px" xml:space="preserve">
+				<path class="svg-ico" d="M11.8,2.8c5,0,9,4,9,9s-4,9-9,9s-9-4-9-9S6.8,2.8,11.8,2.8z M18,18.5l3.5,3.5L18,18.5z"/>
+				</svg>
+				<input type="text"  id="search" placeholder="Search for any game..." spellcheck="false">
+			</div>
+
+			<div class="notifications">
+				<svg version="1.1" width="20px" height="20px" x="0px" y="0px" xml:space="preserve">
+					<path class="svg-ico" d="M3.5,13.8v-0.2c0-0.6,0.2-1.3,0.6-1.8c0.6-0.7,1-1.5,1.2-2.3c0-0.7,0-1.3,0.1-2C5.7,4.2,8.8,2,12,2H12
+						c3.1,0,6.3,2.2,6.6,5.4c0.1,0.7,0,1.3,0,2c0.2,0.9,0.6,1.7,1.2,2.3c0.4,0.5,0.6,1.2,0.6,1.8v0.2c0,0.9-0.3,1.7-0.8,2.4
+						c-0.7,0.8-1.8,1.3-2.9,1.4c-3.2,0.3-6.4,0.3-9.6,0c-1.1-0.1-2.1-0.6-2.9-1.4C3.8,15.5,3.5,14.7,3.5,13.8z M9.6,20.9
+						c0.5,0.6,1.2,1,2,1.1c0.8,0.1,1.6-0.1,2.3-0.6c0.2-0.1,0.4-0.3,0.5-0.5"/>
+				</svg>
+				<div class="not-number flex jc-c ai-c">
+					<small>3</small>
+				</div>
+			</div>
+		</div>
+
+		<!-- Side Navigation -->
+		<div class="side-nav flex flex-col ai-c">
+			<div class="logo-box">
+
+			</div>
+			<div class="navigation">
+				<ul class="nav side-list flex flex-col ai-c">
+					<li class="active">
+						<div class="svg-box">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico" d="M8.8,12.3v3.7 M10.8,14.2H6.9 M15.4,12.4h-0.1 M17.2,16h-0.1 M8.1,2c0,0.7,0.6,1.3,1.4,1.3h1.1
+									c1.2,0,2.1,0.9,2.1,2.1v0.7 M16.4,22c-3,0.1-6,0-8.9,0C4.4,22,2,19.7,2,16.5v-4.6c0-3.2,2.4-5.5,5.6-5.5c2.9,0,5.9,0,8.9,0
+									c3.2,0,5.6,2.3,5.6,5.5v4.6C22,19.7,19.6,22,16.4,22z"
+								/>
+							</svg>
+						</div>
+						<a href="/news_feed.html">News Feed</a>
+					</li>
+					<li>
+						<div class="svg-box">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico" d="M7.2,14.8l3-3.9l3.4,2.7l2.9-3.8 M20,2.3c1.1,0,1.9,0.9,1.9,1.9S21.1,6.1,20,6.1s-1.9-0.9-1.9-1.9
+									S18.9,2.3,20,2.3z M14.9,3.1H7.7c-3,0-4.9,2.1-4.9,5.1v8.1c0,3,1.8,5.1,4.9,5.1h8.6c3,0,4.9-2.1,4.9-5.1v-7"
+								/>
+							</svg>
+						</div>
+						<a href="#">Trending</a>
+					</li>
+					<li>
+						<div class="svg-box">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico" d="M16,10.9c1.8,0,3.3-1.5,3.3-3.3c0-1.8-1.5-3.3-3.3-3.3 M17.5,14.5c0.5,0,1.1,0.1,1.6,0.2
+									c0.7,0.1,1.6,0.5,1.9,1.1c0.2,0.4,0.2,0.9,0,1.3c-0.3,0.7-1.2,1-1.9,1.1 M9.6,15.2c3.7,0,6.8,0.6,6.8,2.8c0,2.2-3.1,2.8-6.8,2.8
+									c-3.7,0-6.8-0.6-6.8-2.8S5.9,15.2,9.6,15.2z M9.6,12c-2.4,0-4.4-2-4.4-4.4c0-2.4,2-4.4,4.4-4.4s4.4,2,4.4,4.4C14,10.1,12,12,9.6,12z"
+								/>
+							</svg>
+						</div>
+						<a href="#"">Following</a>
+					</li>
+					<li>
+						<div class="svg-box">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico" d="M15.8,15.6c0,2-1.4,3.4-3.5,3.4H6.1c-2.2,0-3.5-1.4-3.5-3.4v-7c0-2,1.3-3.4,3.5-3.4h6.2c2.2,0,3.5,1.4,3.5,3.4
+									V15.6z M15.8,11.3l4.1-3.4c0.7-0.5,1.6-0.1,1.6,0.8v6.9c0,0.8-1,1.3-1.6,0.8L15.8,13"
+								/>
+							</svg>
+						</div>
+						<a href="#">Your videos</a>
+						<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+							<path class="svg-ico" d="M12,8.3v7.3 M15.7,12H8.3"/>
+						</svg>
+					</li>
+					<li>
+						<div class="svg-box">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico" d="M13.8,7.4H6.9 M17.1,12H6.9 M10.2,16.6H6.9 M22,16.7V7.3C22,4,19.7,2,16.4,2H7.6C4.3,2,2,4,2,7.3v9.4
+									C2,20,4.3,22,7.6,22h8.8C19.7,22,22,20,22,16.7z"
+								/>
+							</svg>
+						</div>
+						<a href="#">Playlist</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="following side-list">
+				<h5>Following</h5>
+
+				<ul class="following-list flex flex-col ai-c"></ul>
+				<button class="btn btn-small btn-view-all" id="view-all">
+					<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+						<path class="svg-ico arrow-ico" d="M10.9,16.6c-0.1-0.1-0.3-0.3-0.5-0.5C9.1,15,7,12,6.3,10.4C6.2,10.1,6,9.5,6,9.2c0-0.3,0.1-0.6,0.2-0.9
+							c0.2-0.4,0.5-0.6,0.9-0.8c0.3-0.1,1-0.3,1.1-0.3C9,7.1,10.4,7,12,7c1.5,0,2.8,0.1,3.7,0.2c0,0,1,0.2,1.3,0.3c0.6,0.3,1,0.9,1,1.6
+							v0.1c0,0.4-0.4,1.3-0.4,1.3c-0.6,1.5-2.6,4.5-4,5.7c0,0-0.3,0.3-0.6,0.5C12.8,16.9,12.4,17,12,17C11.6,17,11.2,16.9,10.9,16.6z"/>
+					</svg>
+					<small>View all</small>
+				</button>
+			</div>
+
+			<div class="gaming side-list">
+				<h5>Gaming</h5>
+
+				<ul class="gaming-list flex flex-col ai-c">
+					<li>
+						<div class="svg-box">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico" d="M12.1,2C8.5,2,5.3,3.8,3.5,6.8s-1.9,6.7-0.3,9.8L3.3,17c0.2,0.3,0.2,0.7,0.1,1c-0.3,0.8-0.5,1.5-0.7,2.3
+									c0,0.4,0.1,0.6,0.5,0.6c0.8-0.2,1.5-0.4,2.2-0.6c0.3-0.1,0.7-0.1,1,0.1c0.3,0.1,0.8,0.5,0.9,0.5c3.7,1.9,8.2,1.4,11.3-1.3
+									c3.1-2.7,4.2-7.1,2.8-11C19.9,4.6,16.2,2,12.1,2L12.1,2z M7.3,11.5c0.3,0,0.5,0.2,0.5,0.5s-0.2,0.5-0.5,0.5S6.8,12.3,6.8,12
+									S7,11.5,7.3,11.5z M12.1,11.5c0.3,0,0.5,0.2,0.5,0.5s-0.2,0.5-0.5,0.5s-0.5-0.2-0.5-0.5S11.8,11.5,12.1,11.5z M16.8,11.5
+									c0.3,0,0.5,0.2,0.5,0.5s-0.2,0.5-0.5,0.5s-0.5-0.2-0.5-0.5S16.6,11.5,16.8,11.5z"
+								/>
+							</svg>
+						</div>
+						<a href="#">Chat rooms</a>
+					</li>
+					<li>
+						<div class="svg-box">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico" d="M20.8,7.6l-0.6-1.1c-0.5-0.9-1.7-1.2-2.6-0.7l0,0c-0.4,0.3-1,0.3-1.4,0.2c-0.5-0.1-0.9-0.4-1.2-0.9
+									c-0.2-0.3-0.3-0.6-0.3-0.9l0,0c0-0.5-0.2-1-0.5-1.4s-0.9-0.6-1.4-0.6h-1.3c-0.5,0-1,0.2-1.3,0.6C9.8,3.2,9.6,3.7,9.6,4.2l0,0
+									c0,1-0.9,1.9-1.9,1.9C7.4,6.1,7.1,6,6.8,5.8l0,0C5.9,5.3,4.7,5.6,4.2,6.5L3.5,7.6C3,8.5,3.3,9.7,4.2,10.2l0,0c0.6,0.3,1,1,1,1.7
+									c0,0.7-0.4,1.3-1,1.7l0,0c-0.9,0.5-1.2,1.7-0.7,2.6l0,0l0.6,1.1c0.2,0.4,0.7,0.8,1.2,0.9c0.5,0.1,1,0.1,1.5-0.2l0,0
+									c0.4-0.3,1-0.3,1.4-0.2c0.5,0.1,0.9,0.5,1.2,0.9c0.2,0.3,0.3,0.6,0.3,0.9l0,0c0,1.1,0.9,1.9,1.9,1.9h1.3c1.1,0,1.9-0.9,1.9-1.9l0,0
+									c0-0.5,0.2-1,0.6-1.4c0.4-0.4,0.8-0.6,1.4-0.6c0.3,0,0.6,0.1,0.9,0.3l0,0c0.9,0.5,2.1,0.2,2.6-0.7l0,0l0.7-1.1
+									c0.3-0.4,0.3-1,0.2-1.4c-0.1-0.5-0.5-0.9-0.9-1.2l0,0c-0.4-0.3-0.8-0.7-0.9-1.2s-0.1-1,0.2-1.4c0.2-0.3,0.4-0.5,0.7-0.7l0,0
+									C21,9.7,21.3,8.5,20.8,7.6L20.8,7.6L20.8,7.6z M12.2,9.3c1.5,0,2.6,1.2,2.6,2.6s-1.2,2.6-2.6,2.6s-2.6-1.2-2.6-2.6
+									S10.7,9.3,12.2,9.3z"
+								/>
+							</svg>
+						</div>
+						<a href="#">Settings</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="user-sidebar flex jc-c hide-for-mobile">
+			<div class="user-container flex flex-col ai-c">
+				<button class="btn btn-small btn-edit">
+					<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+						<path class="svg-ico edit-ico" d="M13.7,19.9h6.4 M12.9,5c0.7-0.9,1.9-0.9,2.9-0.2l1.4,1.1c0.9,0.7,1.3,1.9,0.5,2.8L9.4,19.3
+							c-0.3,0.4-0.7,0.6-1.2,0.6l-3.2,0l-0.7-3.1c-0.1-0.4,0-0.9,0.3-1.3L12.9,5z M11.3,6.9l4.8,3.8"
+						/>
+					</svg>
+				</button>
+				<div class="user">
+					<div class="user-image">
+						<img src="/images/avatars/avatar-1.png">
+					</div>
+				</div>
+				<small class="user-name" contenteditable="true">John Smith</small>
+			</div>
+		</div>
+
+		<div class="hero-container">
+			<div class="image-container">
+				<img src="/images/game_images/lol.jpg" class="hero-image">
+				<div class="content">
+					<button class="btn btn-med btn-status">
+						<small>Live</small>
+						<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+							<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+								c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+								c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+								C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+								c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+								c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+								c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+							/>
+						</svg>
+					</button>
+					<h1>League of Legends</h1>
+					<h2>Preseason 2021</h2>
+					<button class="btn btn-large btn-watch">Watch</button>
+				</div>
+				<div class="slider-bar">
+					<div class="active-bar"></div>
+				</div>
+				<div class="slides">
+					<button class="btn btn-small btn-slide-back">
+						<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+							<path class="svg-ico arrow-ico" d="M7.4,10.9c0.1-0.1,0.3-0.3,0.5-0.5C9,9.1,12,7,13.6,6.3C13.9,6.2,14.5,6,14.8,6c0.3,0,0.6,0.1,0.9,0.2
+								c0.4,0.2,0.6,0.5,0.8,0.9c0.1,0.3,0.3,1,0.3,1.1C16.9,9,17,10.4,17,12c0,1.5-0.1,2.8-0.2,3.7c0,0-0.2,1-0.3,1.3
+								c-0.3,0.6-0.9,1-1.6,1h-0.1c-0.4,0-1.3-0.4-1.3-0.4C12,16.9,9,15,7.8,13.6c0,0-0.3-0.3-0.5-0.6C7.1,12.8,7,12.4,7,12
+								C7,11.6,7.1,11.2,7.4,10.9z"
+							/>
+						</svg>
+					</button>
+					<div class="slide slide-one">
+						<img src="/images/game_images/cod-warzone.jpg">
+					</div>
+					<div class="slide slide-two slide-active">
+						<img src="/images/game_images/lol.jpg">
+					</div>
+					<div class="slide slide-three">
+						<img src="/images/game_images/thehunter.jpg">
+					</div>
+					<div class="slide slide-four">
+						<img src="/images/game_images/pubg.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="live-container container">
+			<h3>Live Channels</h3>
+
+			<section class="live-section channels-section section">
+				<div class="channel-box box">
+					<div class="channel-img">
+						<img src="/images/game_images/lol.jpg">
+						<button class="btn btn-small btn-play">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico arrow-ico" d="M7.4,10.9c0.1-0.1,0.3-0.3,0.5-0.5C9,9.1,12,7,13.6,6.3C13.9,6.2,14.5,6,14.8,6c0.3,0,0.6,0.1,0.9,0.2
+									c0.4,0.2,0.6,0.5,0.8,0.9c0.1,0.3,0.3,1,0.3,1.1C16.9,9,17,10.4,17,12c0,1.5-0.1,2.8-0.2,3.7c0,0-0.2,1-0.3,1.3
+									c-0.3,0.6-0.9,1-1.6,1h-0.1c-0.4,0-1.3-0.4-1.3-0.4C12,16.9,9,15,7.8,13.6c0,0-0.3-0.3-0.5-0.6C7.1,12.8,7,12.4,7,12
+									C7,11.6,7.1,11.2,7.4,10.9z"
+								/>
+							</svg>
+						</button>
+					</div>
+					<div class="content">
+						<div class="title">
+							<h4>League of Legends Preseason 2021</h4>
+						</div>
+						<div class="about">
+							<div class="logo">
+								<img src="/images/logos/riot.png">
+							</div>
+							<div class="info">
+								<small>Riot Team<div class="status online"></div></small>
+								<small>League of Legends</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="stats">
+						<div class="status live">
+							<small>Live</small>
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+						<div class="watchers">
+							<div class="status online"></div>
+							<small>8.7K Watching</small>
+						</div>
+					</div>
+				</div>
+				<div class="channel-box box">
+					<div class="channel-img">
+						<img src="/images/game_images/pubg.jpg">
+						<button class="btn btn-small btn-play">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico arrow-ico" d="M7.4,10.9c0.1-0.1,0.3-0.3,0.5-0.5C9,9.1,12,7,13.6,6.3C13.9,6.2,14.5,6,14.8,6c0.3,0,0.6,0.1,0.9,0.2
+									c0.4,0.2,0.6,0.5,0.8,0.9c0.1,0.3,0.3,1,0.3,1.1C16.9,9,17,10.4,17,12c0,1.5-0.1,2.8-0.2,3.7c0,0-0.2,1-0.3,1.3
+									c-0.3,0.6-0.9,1-1.6,1h-0.1c-0.4,0-1.3-0.4-1.3-0.4C12,16.9,9,15,7.8,13.6c0,0-0.3-0.3-0.5-0.6C7.1,12.8,7,12.4,7,12
+									C7,11.6,7.1,11.2,7.4,10.9z"
+								/>
+							</svg>
+						</button>
+					</div>
+					<div class="content">
+						<div class="title">
+							<h4>Playerunknown's Battlegrounds</h4>
+						</div>
+						<div class="about">
+							<div class="logo">
+								<img src="/images/avatars/avatar-6.png" class="avatar">
+							</div>
+							<div class="info">
+								<small>Judy Smith<div class="status online"></div></small>
+								<small>Playerunknown's Battlegrounds</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="stats">
+						<div class="status live">
+							<small>Live</small>
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+						<div class="watchers">
+							<div class="status online"></div>
+							<small>2.3K Watching</small>
+						</div>
+					</div>
+				</div>
+				<div class="channel-box box">
+					<div class="channel-img">
+						<img src="/images/game_images/thehunter.jpg">
+						<button class="btn btn-small btn-play">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico arrow-ico" d="M7.4,10.9c0.1-0.1,0.3-0.3,0.5-0.5C9,9.1,12,7,13.6,6.3C13.9,6.2,14.5,6,14.8,6c0.3,0,0.6,0.1,0.9,0.2
+									c0.4,0.2,0.6,0.5,0.8,0.9c0.1,0.3,0.3,1,0.3,1.1C16.9,9,17,10.4,17,12c0,1.5-0.1,2.8-0.2,3.7c0,0-0.2,1-0.3,1.3
+									c-0.3,0.6-0.9,1-1.6,1h-0.1c-0.4,0-1.3-0.4-1.3-0.4C12,16.9,9,15,7.8,13.6c0,0-0.3-0.3-0.5-0.6C7.1,12.8,7,12.4,7,12
+									C7,11.6,7.1,11.2,7.4,10.9z"
+								/>
+							</svg>
+						</button>
+					</div>
+					<div class="content">
+						<div class="title">
+							<h4>theHunter - Call of The Wild</h4>
+						</div>
+						<div class="about">
+							<div class="logo">
+								<img src="/images/avatars/avatar-3.png" class="avatar">
+							</div>
+							<div class="info">
+								<small>Sam Smith<div class="status online"></div></small>
+								<small>theHunter - Call of The Wild</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="stats">
+						<div class="status live">
+							<small>Live</small>
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+						<div class="watchers">
+							<div class="status online"></div>
+							<small>1.3K Watching</small>
+						</div>
+					</div>
+				</div>
+				<div class="channel-box box">
+					<div class="channel-img">
+						<img src="/images/game_images/cod-warzone.jpg">
+						<button class="btn btn-small btn-play">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico arrow-ico" d="M7.4,10.9c0.1-0.1,0.3-0.3,0.5-0.5C9,9.1,12,7,13.6,6.3C13.9,6.2,14.5,6,14.8,6c0.3,0,0.6,0.1,0.9,0.2
+									c0.4,0.2,0.6,0.5,0.8,0.9c0.1,0.3,0.3,1,0.3,1.1C16.9,9,17,10.4,17,12c0,1.5-0.1,2.8-0.2,3.7c0,0-0.2,1-0.3,1.3
+									c-0.3,0.6-0.9,1-1.6,1h-0.1c-0.4,0-1.3-0.4-1.3-0.4C12,16.9,9,15,7.8,13.6c0,0-0.3-0.3-0.5-0.6C7.1,12.8,7,12.4,7,12
+									C7,11.6,7.1,11.2,7.4,10.9z"
+								/>
+							</svg>
+						</button>
+					</div>
+					<div class="content">
+						<div class="title">
+							<h4>Call of Duty Warzone</h4>
+						</div>
+						<div class="about">
+							<div class="logo">
+								<img src="/images/avatars/avatar-1.png" class="avatar">
+							</div>
+							<div class="info">
+								<small>Samuel Simon<div class="status online"></div></small>
+								<small>Call of Duty Warzone</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="stats">
+						<div class="status live">
+							<small>Live</small>
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+						<div class="watchers">
+							<div class="status online"></div>
+							<small>4.9K Watching</small>
+						</div>
+					</div>
+				</div>
+				<div class="channel-box box">
+					<div class="channel-img">
+						<img src="/images/game_images/fortnite.jpg">
+						<button class="btn btn-small btn-play">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico arrow-ico" d="M7.4,10.9c0.1-0.1,0.3-0.3,0.5-0.5C9,9.1,12,7,13.6,6.3C13.9,6.2,14.5,6,14.8,6c0.3,0,0.6,0.1,0.9,0.2
+									c0.4,0.2,0.6,0.5,0.8,0.9c0.1,0.3,0.3,1,0.3,1.1C16.9,9,17,10.4,17,12c0,1.5-0.1,2.8-0.2,3.7c0,0-0.2,1-0.3,1.3
+									c-0.3,0.6-0.9,1-1.6,1h-0.1c-0.4,0-1.3-0.4-1.3-0.4C12,16.9,9,15,7.8,13.6c0,0-0.3-0.3-0.5-0.6C7.1,12.8,7,12.4,7,12
+									C7,11.6,7.1,11.2,7.4,10.9z"
+								/>
+							</svg>
+						</button>
+					</div>
+					<div class="content">
+						<div class="title">
+							<h4>Fortnite</h4>
+						</div>
+						<div class="about">
+							<div class="logo">
+								<img src="/images/avatars/avatar-1.png" class="avatar">
+							</div>
+							<div class="info">
+								<small>John Doe<div class="status online"></div></small>
+								<small>Fortnite</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="stats">
+						<div class="status live">
+							<small>Live</small>
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+						<div class="watchers">
+							<div class="status online"></div>
+							<small>2.7K Watching</small>
+						</div>
+					</div>
+				</div>
+				<div class="channel-box box">
+					<div class="channel-img">
+						<img src="/images/game_images/dota2.jpg">
+						<button class="btn btn-small btn-play">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico arrow-ico" d="M7.4,10.9c0.1-0.1,0.3-0.3,0.5-0.5C9,9.1,12,7,13.6,6.3C13.9,6.2,14.5,6,14.8,6c0.3,0,0.6,0.1,0.9,0.2
+									c0.4,0.2,0.6,0.5,0.8,0.9c0.1,0.3,0.3,1,0.3,1.1C16.9,9,17,10.4,17,12c0,1.5-0.1,2.8-0.2,3.7c0,0-0.2,1-0.3,1.3
+									c-0.3,0.6-0.9,1-1.6,1h-0.1c-0.4,0-1.3-0.4-1.3-0.4C12,16.9,9,15,7.8,13.6c0,0-0.3-0.3-0.5-0.6C7.1,12.8,7,12.4,7,12
+									C7,11.6,7.1,11.2,7.4,10.9z"
+								/>
+							</svg>
+						</button>
+					</div>
+					<div class="content">
+						<div class="title">
+							<h4>Dota 2</h4>
+						</div>
+						<div class="about">
+							<div class="logo">
+								<img src="/images/avatars/avatar-8.png" class="avatar">
+							</div>
+							<div class="info">
+								<small>Lily Hash<div class="status online"></div></small>
+								<small>Dota 2</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="stats">
+						<div class="status live">
+							<small>Live</small>
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+						<div class="watchers">
+							<div class="status online"></div>
+							<small>10.7K Watching</small>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="following-container container">
+			<h3>Following</h3>
+
+			<section class="following-section section">
+				<div class="user-container">
+					<div class="status-box">
+						<div class="status online"></div>
+					</div>
+					<div class="user">
+						<div class="user-image">
+							<img src="/images/avatars/avatar-3.png">
+						</div>
+					</div>
+					<small class="user-name">John Doe</small>
+					<small class="active">Online</small>
+				</div>
+				<div class="user-container">
+					<div class="status-box">
+						<div class="status online"></div>
+					</div>
+					<div class="user">
+						<div class="user-image">
+							<img src="/images/avatars/avatar-5.png">
+						</div>
+					</div>
+					<small class="user-name">Jane Doe</small>
+					<small class="active">Online</small>
+				</div>
+				<div class="user-container">
+					<div class="status-box">
+						<div class="status live">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="user">
+						<div class="user-image">
+							<img src="/images/avatars/avatar-6.png">
+						</div>
+					</div>
+					<small class="user-name">Judy Smith</small>
+					<small class="active">Live</small>
+				</div>
+				<div class="user-container">
+					<div class="status-box">
+						<div class="status live">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="user">
+						<div class="user-image">
+							<img src="/images/avatars/avatar-6.png">
+						</div>
+					</div>
+					<small class="user-name">Judy Smith</small>
+					<small class="active">Live</small>
+				</div>
+				<div class="user-container">
+					<div class="status-box">
+						<div class="status live">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="user">
+						<div class="user-image">
+							<img src="/images/avatars/avatar-6.png">
+						</div>
+					</div>
+					<small class="user-name">Judy Smith</small>
+					<small class="active">Live</small>
+				</div>
+				<div class="user-container">
+					<div class="status-box">
+						<div class="status live">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="user">
+						<div class="user-image">
+							<img src="/images/avatars/avatar-6.png">
+						</div>
+					</div>
+					<small class="user-name">Judy Smith</small>
+					<small class="active">Live</small>
+				</div>
+				<div class="user-container">
+					<div class="status-box">
+						<div class="status live">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="user">
+						<div class="user-image">
+							<img src="/images/avatars/avatar-6.png">
+						</div>
+					</div>
+					<small class="user-name">Judy Smith</small>
+					<small class="active">Live</small>
+				</div>
+				<div class="user-container">
+					<div class="status-box">
+						<div class="status live">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="user">
+						<div class="user-image">
+							<img src="/images/avatars/avatar-6.png">
+						</div>
+					</div>
+					<small class="user-name">Judy Smith</small>
+					<small class="active">Live</small>
+				</div>
+			</section>
+		</div>
+
+		<div class="popular-container container">
+			<h3>Popular Games</h3>
+
+			<section class="popular-section section">
+				<div class="featured box">
+					<img src="/images/game_images/lol.jpg">
+					<div class="content">
+						<div class="categories">
+							<button class="btn btn-large btn-type">MOBA</button>
+							<button class="btn btn-large btn-type">ESports</button>
+						</div>
+						<h2 class="game-title">League of Legends</h2>
+						<div class="watchers">
+							<div class="status online"></div>
+							<small>11.7K Watching</small>
+						</div>
+						<button class="btn btn-large btn-follow">Follow</button>
+					</div>
+				</div>
+				<div class="popular-games">
+					<div class="popular-game box">
+						<img src="/images/game_images/fortnite.jpg">
+						<div class="content">
+							<div class="categories">
+								<button class="btn btn-large btn-type">Shooter</button>
+								<button class="btn btn-large btn-type">Survival</button>
+							</div>
+							<h4 class="game-title">
+								Fortnite
+								<div class="watchers">
+									<div class="status online"></div>
+									<small>7.2K Watching</small>
+								</div>
+							</h4>
+							<button class="btn btn-large btn-follow">Follow</button>
+						</div>
+					</div>
+					<div class="popular-game box">
+						<img src="/images/game_images/pubg.jpg">
+						<div class="content">
+							<div class="categories">
+								<button class="btn btn-large btn-type">Shooter</button>
+								<button class="btn btn-large btn-type">Survival</button>
+							</div>
+							<h4 class="game-title">
+								Playeruknown's Battlegrounds
+								<div class="watchers">
+									<div class="status online"></div>
+									<small>2.3K Watching</small>
+								</div>
+							</h4>
+							<button class="btn btn-large btn-follow">Follow</button>
+						</div>
+					</div>
+					<div class="popular-game box">
+						<img src="/images/game_images/thehunter.jpg">
+						<div class="content">
+							<div class="categories">
+								<button class="btn btn-large btn-type">Shooter</button>
+								<button class="btn btn-large btn-type">Simulation</button>
+							</div>
+							<h4 class="game-title">
+								theHunter - Call of The Wild
+								<div class="watchers">
+									<div class="status online"></div>
+									<small>1.3K Watching</small>
+								</div>
+							</h4>
+							<button class="btn btn-large btn-follow">Follow</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="recommended-container container">
+			<div class="container-header">
+				<h3>Recommended Videos</h3>
+				<button class="btn btn-large btn-filter">
+					Most Recent
+					<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+						<path class="svg-ico arrow-ico" d="M19,8.5l-7,7l-7-7"/>
+					</svg>
+				</button>
+			</div>
+
+			<section class="recommended-section channels-section section">
+				<div class="channel-box box">
+					<div class="channel-img">
+						<img src="/images/game_images/lol.jpg">
+						<button class="btn btn-small btn-play">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico arrow-ico" d="M7.4,10.9c0.1-0.1,0.3-0.3,0.5-0.5C9,9.1,12,7,13.6,6.3C13.9,6.2,14.5,6,14.8,6c0.3,0,0.6,0.1,0.9,0.2
+									c0.4,0.2,0.6,0.5,0.8,0.9c0.1,0.3,0.3,1,0.3,1.1C16.9,9,17,10.4,17,12c0,1.5-0.1,2.8-0.2,3.7c0,0-0.2,1-0.3,1.3
+									c-0.3,0.6-0.9,1-1.6,1h-0.1c-0.4,0-1.3-0.4-1.3-0.4C12,16.9,9,15,7.8,13.6c0,0-0.3-0.3-0.5-0.6C7.1,12.8,7,12.4,7,12
+									C7,11.6,7.1,11.2,7.4,10.9z"
+								/>
+							</svg>
+						</button>
+					</div>
+					<div class="content">
+						<div class="title">
+							<h4>League of Legends Preseason 2021</h4>
+						</div>
+						<div class="about">
+							<div class="logo">
+								<img src="/images/logos/riot.png">
+							</div>
+							<div class="info">
+								<small>Riot Team<div class="status online"></div></small>
+								<small>League of Legends</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="stats">
+						<div class="status live">
+							<small>Live</small>
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+						<div class="watchers">
+							<div class="status online"></div>
+							<small>8.7K Watching</small>
+						</div>
+					</div>
+				</div>
+				<div class="channel-box box">
+					<div class="channel-img">
+						<img src="/images/game_images/pubg.jpg">
+						<button class="btn btn-small btn-play">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico arrow-ico" d="M7.4,10.9c0.1-0.1,0.3-0.3,0.5-0.5C9,9.1,12,7,13.6,6.3C13.9,6.2,14.5,6,14.8,6c0.3,0,0.6,0.1,0.9,0.2
+									c0.4,0.2,0.6,0.5,0.8,0.9c0.1,0.3,0.3,1,0.3,1.1C16.9,9,17,10.4,17,12c0,1.5-0.1,2.8-0.2,3.7c0,0-0.2,1-0.3,1.3
+									c-0.3,0.6-0.9,1-1.6,1h-0.1c-0.4,0-1.3-0.4-1.3-0.4C12,16.9,9,15,7.8,13.6c0,0-0.3-0.3-0.5-0.6C7.1,12.8,7,12.4,7,12
+									C7,11.6,7.1,11.2,7.4,10.9z"
+								/>
+							</svg>
+						</button>
+					</div>
+					<div class="content">
+						<div class="title">
+							<h4>Playerunknown's Battlegrounds</h4>
+						</div>
+						<div class="about">
+							<div class="logo">
+								<img src="/images/avatars/avatar-6.png" class="avatar">
+							</div>
+							<div class="info">
+								<small>Judy Smith<div class="status online"></div></small>
+								<small>Playerunknown's Battlegrounds</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="stats">
+						<div class="status live">
+							<small>Live</small>
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+						<div class="watchers">
+							<div class="status online"></div>
+							<small>2.3K Watching</small>
+						</div>
+					</div>
+				</div>
+				<div class="channel-box box">
+					<div class="channel-img">
+						<img src="/images/game_images/thehunter.jpg">
+						<button class="btn btn-small btn-play">
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico arrow-ico" d="M7.4,10.9c0.1-0.1,0.3-0.3,0.5-0.5C9,9.1,12,7,13.6,6.3C13.9,6.2,14.5,6,14.8,6c0.3,0,0.6,0.1,0.9,0.2
+									c0.4,0.2,0.6,0.5,0.8,0.9c0.1,0.3,0.3,1,0.3,1.1C16.9,9,17,10.4,17,12c0,1.5-0.1,2.8-0.2,3.7c0,0-0.2,1-0.3,1.3
+									c-0.3,0.6-0.9,1-1.6,1h-0.1c-0.4,0-1.3-0.4-1.3-0.4C12,16.9,9,15,7.8,13.6c0,0-0.3-0.3-0.5-0.6C7.1,12.8,7,12.4,7,12
+									C7,11.6,7.1,11.2,7.4,10.9z"
+								/>
+							</svg>
+						</button>
+					</div>
+					<div class="content">
+						<div class="title">
+							<h4>theHunter - Call of The Wild</h4>
+						</div>
+						<div class="about">
+							<div class="logo">
+								<img src="/images/avatars/avatar-3.png" class="avatar">
+							</div>
+							<div class="info">
+								<small>Sam Smith<div class="status online"></div></small>
+								<small>theHunter - Call of The Wild</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="stats">
+						<div class="status live">
+							<small>Live</small>
+							<svg version="1.1" x="0px" y="0px" width="20px" height="20px" xml:space="preserve">
+								<path class="svg-ico live-ico" d="M18.2,5.8c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1c2.8,2.8,2.8,7.4,0,10.2c-0.3,0.3-0.3,0.8,0,1.1
+									c0.1,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2C21.6,14.8,21.6,9.2,18.2,5.8z M15.6,8.4c-0.3-0.3-0.8-0.3-1.1,0
+									c-0.3,0.3-0.3,0.8,0,1.1c1.3,1.3,1.4,3.6,0,4.9c-0.3,0.3-0.3,0.8,0,1.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2
+									C17.6,13.6,17.5,10.4,15.6,8.4z M6.9,6.9c0.3-0.3,0.3-0.8,0-1.1s-0.8-0.3-1.1,0c-3.4,3.4-3.4,9,0,12.4c0.1,0.1,0.4,0.2,0.6,0.2
+									c0.2,0,0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C4.1,14.3,4.1,9.7,6.9,6.9z M9.5,9.5c0.3-0.3,0.3-0.8,0-1.1c-0.3-0.3-0.8-0.3-1.1,0
+									c-2,2-2,5.2,0,7.2c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2c0.3-0.3,0.3-0.8,0-1.1C8.2,13.1,8.2,10.9,9.5,9.5z M12,10.6
+									c0.7,0,1.3,0.6,1.3,1.3c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3C10.7,11.2,11.3,10.6,12,10.6z"
+								/>
+							</svg>
+						</div>
+						<div class="watchers">
+							<div class="status online"></div>
+							<small>1.3K Watching</small>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+  
+  <script src="build/app.bundle.js"></script>
+</body>
+</html>

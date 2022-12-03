@@ -1,0 +1,182 @@
+.side-nav {
+    grid-area: side-nav;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: $darkBlue;
+    border-right: 1px solid $darkGrey;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    .logo-box {
+        width: 100%;
+        padding: 4rem;
+    }
+
+    .nav {
+        position: relative;
+
+        li {
+            width: 165px;
+            display: flex;
+            align-items: center;
+            border-radius: 18px;
+            cursor: pointer;
+
+            .svg-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        li:not(:first-of-type) {
+            margin-top: 25px;
+        }
+
+        li.active {
+            height: 48px;
+            position: relative;
+            background-color: $darkGrey;
+
+            .svg-box {
+                position: absolute;
+                top: -6px;
+                left: -12px;
+                width: 45px;
+                height: 45px;
+                border-radius: 16px;
+                background: linear-gradient(to right, $orange, $lightOrange);
+                box-shadow: 0 0 15px rgba($orange, 0.75);
+
+                svg {
+                    margin-top: -1px;
+                }
+
+                .svg-ico {
+                    fill: transparent;
+                    stroke: $white;
+                }
+            }
+
+            a {
+                color: $white;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .side-list {
+        width: 240px;
+
+        h5 {
+            color: $lighterGrey;
+            align-self: flex-start;
+        }
+
+        li:not(.active):hover {
+
+            .svg-ico {
+                stroke: $white;
+            }
+
+            a {
+                color: $white;
+            }
+        }
+
+        li:not(.active) {
+
+            a {
+                margin-left: 0.8rem;
+            }
+        }
+
+        .btn-view-all {
+            margin-top: 25px;
+
+            &:hover {
+
+                small {
+                    color: $white;
+                }
+
+                .arrow-ico {
+                    fill: $white;
+                }
+            }
+        }
+
+        &:not(:first-of-type)::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -25px;
+            width: 240px;
+            height: 1px;
+            background-color: $darkGrey;
+        }
+    }
+
+    .following {
+        top: 50px;
+
+        .following-list {
+            max-height: 220px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+
+            li {
+
+                a {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .gaming {
+        top: 100px;
+    }
+
+    .following, .gaming {
+        position: relative;
+
+        .following-list, .gaming-list {
+            position: relative;
+            top: 25px;
+
+            li {
+                width: 165px;
+                display: flex;
+                margin-bottom: 25px;
+    
+                a {
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+    
+                    .avatar-box {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: $darkGrey;
+                        overflow: hidden;
+    
+                        .avatar {
+                            width: 26px;
+                            margin-top: 6px;
+                            margin-left: 2px;
+                        }
+                    }
+    
+                    small {
+                        margin-left: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

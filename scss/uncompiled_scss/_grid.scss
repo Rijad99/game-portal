@@ -1,0 +1,18 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px auto 250px;
+    grid-template-rows: 100px auto auto auto auto;
+    grid-template-areas: 
+        "side-nav header header"
+        "side-nav hero-container user-sidebar"
+        "side-nav live-container user-sidebar"
+        "side-nav following-container user-sidebar"
+        "side-nav popular-container user-sidebar"
+        "side-nav recommended-container user-sidebar";
+}
+
+.grid-container {
+    @include breakpoint-down(large) {
+        grid-template-columns: 300px auto;
+    } 
+}

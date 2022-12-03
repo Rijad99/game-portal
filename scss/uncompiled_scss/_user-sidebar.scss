@@ -1,0 +1,34 @@
+.user-sidebar {
+    grid-area: user-sidebar;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    height: calc(100% - 100px);
+    background-color: $darkBlue;
+    border-left: 1px solid $darkGrey;
+    padding-top: 3.125rem;
+
+    .user-container {
+        position: relative;
+
+        .btn-edit {
+            position: absolute;
+            right: -10px;
+            top: -25px;
+
+            svg {
+
+                .edit-ico {
+                    fill: $darkGrey;
+                }
+            }
+        }
+
+        .user-name {
+            font-size: 0.85rem;
+            font-weight: 800;
+            margin-top: 15px;
+        }
+    }
+}

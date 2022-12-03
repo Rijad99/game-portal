@@ -1,0 +1,51 @@
+.header {
+    grid-area: header;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 300px);
+    height: 100px;
+    padding: 0 3.125rem;
+    background-color: $darkBlue;
+    border-bottom: 1px solid $darkGrey;
+    z-index: 1000;
+    
+    .search-control {
+
+        input {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: $lighterGrey;
+            margin-left: 0.8rem;
+        }
+
+        ::placeholder {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: $lighterGrey;
+        }
+    }
+
+    .notifications {
+        position: relative;
+
+        .not-number {
+            position: absolute;
+            top: -16px;
+            right: -16px;
+            width: 18px;
+            height: 18px;
+            background: linear-gradient(to right, $orange, $lightOrange);
+            box-shadow: 0 0 10px rgba($orange, 0.75);
+            border-radius: 50%;
+    
+            small {
+                font-size: 0.6rem;
+                font-weight: 500;
+                color: $white;
+                margin-top: -1px;
+                margin-left: -1px;
+            }
+        }
+    }
+}
