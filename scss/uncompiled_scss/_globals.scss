@@ -244,6 +244,12 @@ h4 {
     border-radius: 18px;
     background: linear-gradient(to right, $orange, $lightOrange);
     box-shadow: 0 0 15px rgba($orange, 0.95);
+
+    @include breakpoint-down(medium) {
+        width: 75px;
+        height: 35px;
+        font-size: 0.7rem;
+    }
 }
 
 .btn-status {
@@ -259,6 +265,16 @@ h4 {
 
     small {
         font-size: 0.65rem;
+    }
+
+    @include breakpoint-down(medium) {
+        width: 58px;
+        height: 25px;
+        font-size: 0.7rem;
+
+        small {
+            font-size: 0.6rem;
+        }
     }
 }
 

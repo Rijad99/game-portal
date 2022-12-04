@@ -67,6 +67,10 @@
                 bottom: unset;
                 padding: 1.5rem 3.125rem 1.5rem;
             }
+
+            @include breakpoint-down(medium) {
+                padding: 1rem 1rem 1rem;
+            }
         }
 
         .slides {
@@ -483,6 +487,10 @@
                     justify-content: space-between;
                     bottom: unset;
                     padding: 1.5rem 0 1.5rem 3.125rem;
+                }
+
+                @include breakpoint-down(medium) {
+                    padding: 1rem 0 1rem 1rem;
                 }
             }
 

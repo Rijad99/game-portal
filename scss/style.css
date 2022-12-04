@@ -230,6 +230,13 @@ h4 {
   background: linear-gradient(to right, hsl(20deg, 88%, 54%), hsl(33deg, 97%, 51%));
   box-shadow: 0 0 15px rgba(241, 103, 34, 0.95);
 }
+@media (max-width: 63.9375em) {
+  .btn-large {
+    width: 75px;
+    height: 35px;
+    font-size: 0.7rem;
+  }
+}
 
 .btn-status {
   width: 68px;
@@ -244,6 +251,16 @@ h4 {
 }
 .btn-status small {
   font-size: 0.65rem;
+}
+@media (max-width: 63.9375em) {
+  .btn-status {
+    width: 58px;
+    height: 25px;
+    font-size: 0.7rem;
+  }
+  .btn-status small {
+    font-size: 0.6rem;
+  }
 }
 
 .btn-type {
@@ -399,6 +416,11 @@ h4 {
   font-weight: 700;
   color: hsl(227deg, 8%, 34%);
 }
+@media (max-width: 39.9375em) {
+  .header .search-control {
+    display: none;
+  }
+}
 .header .user {
   width: 30px;
   height: 30px;
@@ -456,6 +478,36 @@ h4 {
 .side-nav .logo-box {
   width: 100%;
   padding: 4rem;
+}
+.side-nav .search-control {
+  margin-bottom: 2rem;
+  display: none;
+}
+.side-nav .search-control input {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: hsl(227deg, 8%, 34%);
+  margin-left: 0.8rem;
+}
+.side-nav .search-control ::-moz-placeholder {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: hsl(227deg, 8%, 34%);
+}
+.side-nav .search-control :-ms-input-placeholder {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: hsl(227deg, 8%, 34%);
+}
+.side-nav .search-control ::placeholder {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: hsl(227deg, 8%, 34%);
+}
+@media (max-width: 39.9375em) {
+  .side-nav .search-control {
+    display: block;
+  }
 }
 .side-nav .nav {
   position: relative;
@@ -687,6 +739,11 @@ h4 {
     justify-content: space-between;
     bottom: unset;
     padding: 1.5rem 3.125rem 1.5rem;
+  }
+}
+@media (max-width: 63.9375em) {
+  .hero-container .image-container .content {
+    padding: 1rem 1rem 1rem;
   }
 }
 .hero-container .image-container .slides {
@@ -1054,6 +1111,11 @@ h4 {
     justify-content: space-between;
     bottom: unset;
     padding: 1.5rem 0 1.5rem 3.125rem;
+  }
+}
+@media (max-width: 63.9375em) {
+  .popular-container .popular-section .featured .content {
+    padding: 1rem 0 1rem 1rem;
   }
 }
 .popular-container .popular-section .featured::before {

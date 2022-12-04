@@ -63,6 +63,10 @@
             font-weight: 700;
             color: $lighterGrey;
         }
+
+        @include breakpoint-down(small) {
+            display: none;
+        }
     }
 
     .user {
