@@ -12,6 +12,10 @@
     .user-container {
         position: relative;
 
+        .user {
+            cursor: pointer;
+        }
+
         .btn-edit {
             position: absolute;
             right: -10px;

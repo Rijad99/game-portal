@@ -68,8 +68,8 @@
     .user {
         width: 30px;
         height: 30px;
-        margin-right: 1rem;
         display: none;
+        cursor: pointer;
 
         &::before {
             width: 33px;
@@ -87,6 +87,7 @@
 
     .notifications {
         position: relative;
+        margin-right: 2rem;
 
         .not-number {
             position: absolute;

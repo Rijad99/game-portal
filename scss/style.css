@@ -394,8 +394,8 @@ h4 {
 .header .user {
   width: 30px;
   height: 30px;
-  margin-right: 1rem;
   display: none;
+  cursor: pointer;
 }
 .header .user::before {
   width: 33px;
@@ -407,6 +407,7 @@ h4 {
 }
 .header .notifications {
   position: relative;
+  margin-right: 2rem;
 }
 .header .notifications .not-number {
   position: absolute;
@@ -600,6 +601,9 @@ h4 {
 }
 .user-sidebar .user-container {
   position: relative;
+}
+.user-sidebar .user-container .user {
+  cursor: pointer;
 }
 .user-sidebar .user-container .btn-edit {
   position: absolute;
