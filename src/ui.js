@@ -98,6 +98,10 @@ class UI {
             }
         });
     }
+
+    openCloseSidebar(sidebar) {
+        sidebar.classList.toggle("show-side-nav-mobile");
+    }
 }
 
 

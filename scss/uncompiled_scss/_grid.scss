@@ -8,11 +8,14 @@
         "side-nav live-container user-sidebar"
         "side-nav following-container user-sidebar"
         "side-nav popular-container user-sidebar"
-        "side-nav recommended-container user-sidebar";
-}
+        "side-nav recommended-container user-sidebar"
+    ;
 
-.grid-container {
     @include breakpoint-down(large) {
         grid-template-columns: 300px auto;
+    } 
+
+    @include breakpoint-down(medium) {
+        grid-template-columns: auto;
     } 
 }

@@ -30,5 +30,10 @@
             font-weight: 800;
             margin-top: 15px;
         }
+
+        .user-name:focus[contenteditable="true"] {
+            outline: 1px solid $lighterGrey;
+            padding: 0.25rem 0.5rem;
+        }
     }
 }

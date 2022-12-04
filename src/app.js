@@ -1,10 +1,11 @@
-import { ui } from "./ui";
+import { ui } from "./ui.js";
 
 
 
 // DOM elements
 const btnViewAll = document.querySelector(".btn-view-all");
-
+const menuBtn = document.querySelector(".menu-btn");
+const sidebar = document.querySelector(".side-nav");
 
 const followersData = [
     {
@@ -96,7 +97,10 @@ btnViewAll.addEventListener("click", () => {
     btnViewAll.querySelector("small").innerText = "Show less";
 });
 
-
+menuBtn.addEventListener("click", () => {
+    ui.openCloseSidebar(sidebar);
+    menuBtn.classList.toggle("hamburger-to-x");
+})
 
 const init = () => {
     ui.showLessFollowers(followersData);

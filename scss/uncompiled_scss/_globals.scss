@@ -334,3 +334,15 @@ h4 {
         display: none;
     }
 }
+
+.show-for-desktop {
+    @include breakpoint-down(medium) {
+        display: block !important;
+    }
+}
+
+.show-for-mobile {
+    @include breakpoint-down(large) {
+        display: block !important;
+    }
+}
