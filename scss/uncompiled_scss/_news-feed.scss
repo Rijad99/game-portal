@@ -91,6 +91,10 @@
                 img {
                     width: 100%;
                     border-radius: 20px;
+
+                    @include breakpoint-down(small) {
+                        border-radius: 15px;
+                    }
                 }
 
                 @include breakpoint-down(large) {
@@ -99,6 +103,11 @@
 
                 @include breakpoint-down(medium) {
                     width: 130px;
+                }
+
+                @include breakpoint-down(small) {
+                    border-radius: 15px;
+                    width: 100px;
                 }
             }
 
@@ -128,6 +137,15 @@
                 @include breakpoint-down(medium) {
                     transform: translateX(-15px);
                     width: 140px;
+                }
+
+                @include breakpoint-down(small) {
+                    width: 110px;
+                    padding: 0 5px;
+
+                    img {
+                        border-radius: 12px;
+                    }
                 }
             }
 
@@ -165,6 +183,13 @@
                 @include breakpoint-down(medium) {
                     top: 17px;
                 }
+
+                @include breakpoint-down(small) {
+                    width: 30px;
+                    height: 30px;
+                    left: -15px;
+                    top: 12px;
+                }
             }
 
             @include breakpoint-down(large) {
@@ -178,6 +203,10 @@
 
         @include breakpoint-down(medium) {
             height: 45vw;
+        }
+
+        @include breakpoint-down(small) {
+            height: 55vw;
         }
     }
 
