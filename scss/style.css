@@ -110,6 +110,11 @@ h4 {
 .container h3 {
   color: hsl(0deg, 0%, 100%);
 }
+@media (max-width: 63.9375em) {
+  .container {
+    padding: 5.125rem 1rem 5.125rem 1rem;
+  }
+}
 
 .container:not(:last-of-type) {
   padding-bottom: initial;
@@ -432,6 +437,7 @@ h4 {
 @media (max-width: 63.9375em) {
   .header {
     width: 100%;
+    padding: 0 1rem;
   }
 }
 
