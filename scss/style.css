@@ -6,9 +6,12 @@
   font-family: "Raleway", sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: hsl(227deg, 13%, 14%);
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

@@ -8,9 +8,12 @@
     font-family: "Raleway", sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background-color: $darkBlue;
-    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
