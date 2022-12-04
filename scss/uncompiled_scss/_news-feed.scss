@@ -238,6 +238,10 @@
     grid-template-columns: repeat(auto-fit, minmax(230px, auto));
     grid-gap: 30px;
 
+    @include breakpoint-down(small) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+
     .box {
 
         .channel-img {

@@ -910,6 +910,11 @@ h4 {
   grid-template-columns: repeat(auto-fit, minmax(230px, auto));
   grid-gap: 30px;
 }
+@media (max-width: 39.9375em) {
+  .channels-section {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  }
+}
 .channels-section .box .channel-img {
   position: relative;
   display: flex;

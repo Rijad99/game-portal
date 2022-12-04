@@ -32,6 +32,7 @@ class UI {
     
                 followingList.appendChild(li);
             }
+            
         } else if (data.length > 4) {
             newData = data.slice(0, followersLimit);
 
