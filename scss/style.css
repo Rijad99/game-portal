@@ -11,6 +11,8 @@ html, body {
 }
 
 body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   background-color: hsl(227deg, 13%, 14%);
 }
 
@@ -718,8 +720,23 @@ h4 {
   color: hsl(0deg, 0%, 100%);
 }
 @media (max-width: 87.4375em) {
-  .hero-container .image-container .content h1, .hero-container .image-container .content h2 {
-    display: none;
+  .hero-container .image-container .content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 87.4375em) {
+  .hero-container .image-container .content h2 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 39.9375em) {
+  .hero-container .image-container .content h1 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 39.9375em) {
+  .hero-container .image-container .content h2 {
+    font-size: 0.9rem;
   }
 }
 .hero-container .image-container .content .btn-watch {
@@ -912,7 +929,13 @@ h4 {
 }
 @media (max-width: 39.9375em) {
   .channels-section {
+    grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  }
+}
+@media (max-width: 31.5em) {
+  .channels-section {
+    grid-template-columns: repeat(auto-fit, minmax(175px, auto));
   }
 }
 .channels-section .box .channel-img {
@@ -1038,6 +1061,13 @@ h4 {
   box-shadow: 0 0 5px rgba(241, 103, 34, 0.75);
   margin-right: 5px;
 }
+@media (max-width: 39.9375em) {
+  .channels-section .box .stats .watchers small {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
 
 .following-container {
   grid-area: following-container;
@@ -1118,11 +1148,6 @@ h4 {
   margin-top: 25px;
   color: hsl(0deg, 0%, 100%);
 }
-@media (max-width: 87.4375em) {
-  .popular-container .popular-section .featured .content .game-title {
-    display: none;
-  }
-}
 .popular-container .popular-section .featured .content .watchers {
   margin-top: 5px;
 }
@@ -1132,11 +1157,6 @@ h4 {
 }
 .popular-container .popular-section .featured .content .watchers small {
   color: hsl(0deg, 0%, 100%);
-}
-@media (max-width: 87.4375em) {
-  .popular-container .popular-section .featured .content .watchers {
-    display: none;
-  }
 }
 .popular-container .popular-section .featured .content .btn-follow {
   margin-top: 25px;

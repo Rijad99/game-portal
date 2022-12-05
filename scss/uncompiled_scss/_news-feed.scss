@@ -41,9 +41,29 @@
 
             h1, h2 {
                 color: $white;
+            }
 
+            h1 {
                 @include breakpoint-down(large) {
-                    display: none;
+                    font-size: 2.5rem;
+                }
+            }
+
+            h2 {
+                @include breakpoint-down(large) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            h1 {
+                @include breakpoint-down(small) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            h2 {
+                @include breakpoint-down(small) {
+                    font-size: 0.9rem;
                 }
             }
 
@@ -239,7 +259,12 @@
     grid-gap: 30px;
 
     @include breakpoint-down(small) {
+        grid-gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+
+    @include breakpoint-down(smallest) {
+        grid-template-columns: repeat(auto-fit, minmax(175px, auto));
     }
 
     .box {
@@ -389,6 +414,14 @@
                     box-shadow: 0 0 5px rgba($orange, 0.75);
                     margin-right: 5px;
                 }
+
+                small {
+                    @include breakpoint-down(small) {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                    }
+                }
             }
         }
     }
@@ -486,10 +519,6 @@
                 .game-title {
                     margin-top: 25px;
                     color: $white;
-                    
-                    @include breakpoint-down(large) {
-                        display: none;
-                    }
                 }
 
                 .watchers {
@@ -502,10 +531,6 @@
 
                     small {
                         color: $white;
-                    }
-
-                    @include breakpoint-down(large) {
-                        display: none;
                     }
                 }
 
